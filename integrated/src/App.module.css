@@ -1,0 +1,252 @@
+.chartColorPrimary {
+  --chart-color: #4575EF;
+}
+.chartColorDonut {
+  --chart-color-1: #4ECDC4;
+  --chart-color-2: #FFA500;
+  --chart-color-3: #8E44AD;
+  --chart-color-4: #E74C3C;
+  --chart-color-5: #FFFF00;
+}
+.chartColorBar {
+  --chart-color-bar: #6B73FF;
+}
+.app {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoIcon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logoText h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logoText p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  color: white;
+  width: 300px;
+}
+
+.searchBar input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+.headerIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.headerIcon:hover {
+  opacity: 1;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboardHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboardHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.dashboardHeader p {
+  color: #666;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.exportSection {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.exportSection h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.exportOptions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exportOptions label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.exportButton {
+  background: #4575ef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.exportButton:hover {
+  background: #3461d1;
+}
+
+.footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footerContent p {
+  margin: 0.25rem 0;
+}
+
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialLinks span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.socialLinks span:hover {
+  transform: scale(1.2);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4575ef;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    padding: 1.5rem;
+  }
+
+  .headerRight {
+    gap: 0.5rem;
+  }
+
+  .searchBar input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .dashboardHeader h2 {
+    font-size: 2rem;
+  }
+
+  .dashboardHeader p {
+    font-size: 1rem;
+  }
+}

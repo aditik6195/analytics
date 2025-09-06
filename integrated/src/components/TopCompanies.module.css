@@ -1,0 +1,58 @@
+.topCompanies {
+  margin-bottom: 2rem;
+}
+
+.topCompanies h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.companiesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companiesTable thead {
+  background: #f8f9fa;
+}
+
+.companiesTable th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.companiesTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #f1f3f4;
+  color: #495057;
+}
+
+.companiesTable tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.companiesTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .tableContainer {
+    overflow-x: auto;
+  }
+
+  .companiesTable {
+    min-width: 600px;
+  }
+}

@@ -1,0 +1,130 @@
+.placementDistribution {
+  margin-bottom: 2rem;
+}
+
+.placementDistribution h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+}
+
+.chartsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.chartContainer {
+  background: #f8f4ff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(128, 0, 128, 0.1);
+  border: 2px solid #e6d9ff;
+}
+
+.chartCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chartCard h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.donutChart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donutSvg {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+
+.histogram {
+  height: 300px;
+  position: relative;
+}
+
+.barsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  height: 250px;
+  padding: 0 1rem;
+}
+
+.barGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 50px;
+}
+
+.bar {
+  width: 100%;
+  min-height: 20px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.barValue {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+}
+
+.barLabel {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.xAxisTitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .chartsContainer {
+    grid-template-columns: 1fr;
+  }
+}
